@@ -14,7 +14,11 @@ p{
 }
 
 header{
-    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 6vw;
     border-bottom: 2px solid rgb(0, 195, 25);
 }
 
@@ -24,20 +28,32 @@ header ul li{
 
 .nav-link{
     color:rgb(7, 255, 243);
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-link:hover{
-    background-color: rgb(28, 100, 141);
+    border-bottom: 1px solid rgb();
     color: #fff;
-    transition: 0.4s;
+    
 }
 
-.me h2{  
-    border-bottom: 1px solid rgb(151, 240, 210);
-}
+.me{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-.me img{
-    border: 1.5px solid rgb(0, 255, 191);
+    min-height: 85vh;
+
+    h1{  
+        border-bottom: 1px solid rgb(7, 255, 243);
+    }
+    img{
+        border-radius: 50%;
+        border: 2px solid rgb(0, 255, 191);
+        object-fit: cover;
+        height: 20vw; 
+        width: 20vw;
+    }
 }
 
 .project-sobre h2{
