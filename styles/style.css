@@ -2,39 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 body{
-    background-color: #111111;
-}
-
-p{
-    font-size: 1.1vw;
+    background-color: #202020;
 }
 
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     height: 6vw;
     border-bottom: 2px solid rgb(0, 195, 25);
+    background-color: #000000;
 }
 
-header ul li{
-    font-size: 1.2vw;
+.logo{
+    font-size: 3rem;
+    color: rgb(0, 255, 191);
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav-link{
+    font-size: 1.2vw;
     color:rgb(7, 255, 243);
     transition: color 0.3s, border-bottom 0.3s;
 }
 
 .nav-link:hover{
-    border-bottom: 1px solid rgb();
+    border-bottom: 1px solid rgb(7, 255, 243);
     color: #fff;
-    
+    border-radius: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
 }
 
 .me{
@@ -43,17 +60,47 @@ header ul li{
     justify-content: space-evenly;
 
     min-height: 85vh;
-
+    /*background-image: url(../images/historia/historia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
     h1{  
-        border-bottom: 1px solid rgb(7, 255, 243);
+        font-size: 3vw;
+        color: #fff;
+        margin-bottom: 2vw;
+    }
+    span{
+        color: rgb(0, 255, 191);
     }
     img{
+        display: block;
+
         border-radius: 50%;
         border: 2px solid rgb(0, 255, 191);
         object-fit: cover;
-        height: 20vw; 
-        width: 20vw;
+        height: 22vw; 
+        width: 22vw;
     }
+    .quote{
+        font-size: 1.1vw;
+        color: #fff;
+    }
+    .text-main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content-sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+    margin-top: 5vw;
+    width: 100%; 
+    height: 100vw;
 }
 
 .project-sobre h2{
