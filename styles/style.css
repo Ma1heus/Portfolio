@@ -53,14 +53,17 @@ header{
     }
 }
 
-nav{
+nav ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav a{
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-left: 4rem;
     color:rgb(7, 255, 243);
     font-weight: 500;
@@ -72,37 +75,6 @@ nav a:hover, nav a.active{
     border-bottom: 1px solid rgb(7, 255, 243);
     color: #fff;
     border-radius: 0;
-}
-
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 100%;
-        border-left: 3px solid rgb(0, 255, 191);
-        border-bottom: 3px solid rgb(0, 255, 191);
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgb(0, 255, 191);
-    }
-    .nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover, nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid rgb(0, 255, 191);
-    }
 }
 
 section{
@@ -258,7 +230,7 @@ span{
     }
 
     header .logo{
-        font-size: 0;
+        font-size:0;
     }
 
     .home{
@@ -266,7 +238,12 @@ span{
         margin: 5rem 4rem;
     }
 
-    .home .home-content h3{
+    .home-content{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    .home-content h3{
         font-size: 2.5rem;
     }
 
@@ -277,9 +254,7 @@ span{
     .home-img img{
         width: 70vw;
         height: 70vw;
-        margin-top: 15rem;
     }
-
 
     .social-download-content{
         display: flex;
@@ -288,6 +263,72 @@ span{
         flex-direction: column;
     }
 }
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}	
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .typing-text, .quote, .social-icons{
+        display: none;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 34px 0;
+        line-height: 30px;
+        margin-left: -50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
 
 /*.home{
     display: flex;
