@@ -18,7 +18,6 @@ body{
     height: 100vh;
     overflow-x: hidden;
     color:#fff;
-    background-color: #000;
 }
 
 header{
@@ -41,16 +40,12 @@ header{
 }
 
 .logo{
-    font-size: 3rem;
+    font-size: 4rem;
     color: rgb(0, 255, 191);
     font-weight: 800;
     cursor: pointer;
     transition: .5s ease;
     text-decoration: none;
-
-    :hover{
-       transform: scale(1.1); 
-    }
 }
 
 nav ul{
@@ -71,7 +66,7 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover, nav a.active{
+nav a:hover{
     border-bottom: 1px solid rgb(7, 255, 243);
     color: #fff;
     border-radius: 0;
@@ -87,7 +82,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    background-color: #000;
+    background: linear-gradient(to right, rgb(92, 150, 156), rgb(81, 139, 111));
 }
 
 .home .home-content h1{
@@ -136,6 +131,7 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
+    color: rgb(0, 255, 191);
     border: 0.2rem solid rgb(0, 255, 191);
     font-size: 2rem;
     border-radius: 50%;
@@ -144,7 +140,7 @@ span{
 }
 
 .social-icons a:hover{
-    color: #000;
+    color: rgb(4, 75, 116);
     transform: scale(1.3) transparent;
     background-color: rgb(0, 255, 191);
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
@@ -153,7 +149,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2rem;
-    background-color: #000;
+    background-color: transparent;
     color: rgb(0, 255, 191);
     letter-spacing: 0.3rem;
     font-size: 1.6rem;
@@ -166,9 +162,8 @@ span{
 }
 
 .btn:hover{
-    transform: scale(1.3);
     background-color: rgb(0, 255, 191);
-    color: #000;
+    color: rgb(4, 75, 116);
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
 }
 
@@ -185,17 +180,17 @@ span{
 .typing-text span::before{
     content: 'Software Developer';
     color: rgb(0, 255, 191);
-    animation: words 20s infinite;
+    animation: words 15s infinite;
 }
 
 .typing-text span::after{
     content: '';
     color: rgb(0, 255, 191);
-    background-color: #000;
+    background-color: transparent;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid #000;
+    border-left: 3px solid transparent;
     right: -8;
     animation: cursor 0.6s infinite;
 }
