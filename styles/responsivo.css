@@ -1,40 +1,52 @@
 /* Mobile até 768px */
 @media (max-width: 768px) {
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
-    header, nav{
-        margin-top: 0;
-        padding-top: 0;
-    }
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top:0;
-        left: 0;
-
-        z-index: 100;
-        filter: drop-shadow(10px);
-        background-color: transparent;
-
         padding: 1rem 1.5rem;
     }
-    header nav ul, a{
+    header .logo {
         display: none;
     }
-    .menu-toggle {
+    .btn {
+        margin-top: 20px;
+    }
+    .checkbtn{
         display: block;
-        font-size: 1.8rem;
-        cursor: pointer;
-        color: #00ffcc; /* cor do ícone */
-    } 
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #5a978d;
+        top: 80px;
+        left: -100%;
+        right: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 34px 0;
+        line-height: 30px;
+        margin-left: -50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
     .home {
         flex-direction: column;
         text-align: center;
-        margin-top: 2rem;
         padding: 0 1rem;
     }
     .home-img img {
@@ -42,28 +54,13 @@
         height: 180px;
         object-fit: cover;   
         border-radius: 50%;  /* deixa redonda */
-        margin: 0 auto 2rem auto;
+        margin: 2 auto 1rem auto;
     }
     .home-content h1 {
         font-size: 2rem;
     }
-    .home-content h3 {
-        font-size: 1.3rem;
-    }
-    .home-content p {
-        font-size: 0.9rem;
-        margin: 1rem 0;
-    }
-    /* BOTÕES / REDES SOCIAIS */
-    .social-media {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin: 1.5rem 0;
-    }
-    .btn {
-        font-size: 0.9rem;
-        padding: 0.7rem 1.2rem;
+    .home-content h3, p, .social-icons{
+        display: none;
     }
 }
 
