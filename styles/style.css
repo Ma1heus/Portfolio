@@ -237,9 +237,10 @@ span{
 }
 
 .about-me{
-    font-size: 4rem;
-    margin-bottom: 10rem;
-    margin-top: -22rem;
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+    margin-top: -18rem;
+    
     color: rgb(0, 0, 0);
 }
 
@@ -249,24 +250,39 @@ span{
     flex-direction: column;  
 
     max-width: 800px;
-    gap: 3rem;
     padding: 2rem;
-    margin-right: 50rem;
+    margin-right: 40rem;
     margin-top: 20rem;
 }
 
 .about-content p{
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     color: rgb(0, 0, 0);
 }
 
-#about img{
-    width: 30rem;
-    height: 30rem;
+.about-images{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-images img{
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
     cursor: pointer;
     transition: 0.2s linear;
+}
+
+.img-left{
+    align-self: flex-start;
+    margin-left: 30rem;
+}
+
+.img-right{
+    align-self: flex-end;
+    margin-right: 30rem;
 }
 
 #skills {
@@ -275,29 +291,40 @@ span{
 }
 
 #skills h2 {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3rem;
+
+    color: rgb(0, 0, 0);
+}
+
+.skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .skill {
   display: flex;
   align-items: center;
+  gap: 5rem;
   margin: 15px 0;
 }
 
 .skill span {
-  width: 120px;
+  width: 120px; 
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .blocks {
-  display: flex;
-  gap: 5px;
+    display: flex;
+    gap: 15px;
 }
 
 .blocks span {
-  width: 20px;
-  height: 20px;
+  width: 3vw;
+  height: 3vw;
   border: 2px solid #333;
   border-radius: 4px;
 }
@@ -309,7 +336,7 @@ span{
 .skills-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-top: 40px;
 }
 
