@@ -115,8 +115,8 @@ span{
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
+    border: #045b63 3px solid;
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
-    cursor: pointer;
     transition: 0.2s linear;
 }
 
@@ -233,15 +233,15 @@ span{
     align-items: center;
     justify-content: center;
 
-    background-color: rgb(235, 255, 248);
-}
+    background: linear-gradient(135deg, #e0f7fa 0%, #def7f5 50%, #79abaf 100%);
+} /*Aumentar o tamanho da section about*/
 
 .about-me{
-    font-size: 3.5rem;
+    font-size: 4.25rem;
     margin-bottom: 5rem;
     margin-top: -18rem;
     
-    color: rgb(0, 0, 0);
+    color: #045b63;
 }
 
 .about-content{
@@ -250,13 +250,13 @@ span{
     flex-direction: column;  
 
     max-width: 800px;
-    padding: 2rem;
-    margin-right: 40rem;
+    margin-right: 30rem;
     margin-top: 20rem;
 }
 
 .about-content p{
     font-size: 1.7rem;
+    text-align: justify;
     color: rgb(0, 0, 0);
 }
 
@@ -267,27 +267,24 @@ span{
 }
 
 .about-images img{
-    width: 25rem;
-    height: 25rem;
+    width: 27rem;
+    height: 27rem;
     border-radius: 50%;
+    border: #83c6cc 2px solid;
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
-    cursor: pointer;
-    transition: 0.2s linear;
-}
+} /*Aumentar o tamanho da primeira imagem, da segunda e manter a terceira*/
 
 .img-left{
     align-self: flex-start;
     margin-left: 30rem;
 }
 
-.img-right{
-    align-self: flex-end;
-    margin-right: 30rem;
-}
-
 #skills {
-  padding: 50px;
-  background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 50%, #045b63 100%);
 }
 
 #skills h2 {
@@ -295,7 +292,7 @@ span{
     margin-bottom: 30px;
     font-size: 3rem;
 
-    color: rgb(0, 0, 0);
+    color: #045b63;
 }
 
 .skills-content {
