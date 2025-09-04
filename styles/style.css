@@ -83,7 +83,8 @@ section{
     align-items: center;
     justify-content: center;
     gap: 8rem;
-    background: linear-gradient(to right, rgb(92, 150, 156), rgb(81, 139, 111));
+    background: linear-gradient(to right, rgb(19, 196, 137), rgb(116, 184, 151));
+    border-bottom: #045b63 2px solid;
 }
 
 .home .home-content h1{
@@ -232,9 +233,11 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vw;
+    border-bottom: #045b63 2px solid;
 
     background: linear-gradient(135deg, #e0f7fa 0%, #def7f5 50%, #79abaf 100%);
-} /*Aumentar o tamanho da section about*/
+}
 
 .about-me{
     font-size: 4.25rem;
@@ -267,16 +270,30 @@ span{
 }
 
 .about-images img{
-    width: 27rem;
-    height: 27rem;
     border-radius: 50%;
     border: #83c6cc 2px solid;
     box-shadow: 0 0 25px solid rgb(0, 255, 191);
-} /*Aumentar o tamanho da primeira imagem, da segunda e manter a terceira*/
+} 
 
-.img-left{
+.about-images .first-img{
+    align-self: flex-end;
+    margin-right: 30rem;
+    width: 40rem;
+    height: 40rem;
+}
+
+.about-images .second-img{
     align-self: flex-start;
     margin-left: 30rem;
+    width: 35rem;
+    height: 35rem;
+}
+
+.about-images .third-img{
+    align-self: flex-end;
+    margin-right: 30rem;
+    width: 25rem;
+    height: 25rem;
 }
 
 #skills {
@@ -284,7 +301,8 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #e0f7fa 0%, #b2dfdb 50%, #045b63 100%);
+    background: linear-gradient(135deg, #36df90 0%, #1fdbcc 50%, #369ff5 100%);
+    border-bottom: #045b63 2px solid;
 }
 
 #skills h2 {
@@ -351,6 +369,16 @@ span{
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #36df90 0%, #1fdbcc 50%, #369ff5 100%);
+}
 
 /*.home{
     display: flex;
