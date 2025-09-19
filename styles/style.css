@@ -363,7 +363,9 @@ span{
 }
 
 .skills-cards {
-  display: grid;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   margin-top: 40px;
@@ -392,6 +394,23 @@ span{
     min-height: 100vh;
 
     background: linear-gradient(135deg, #36df90 0%, #1fdbcc 50%, #369ff5 100%);
+    border-bottom: #045b63 2px solid;
+}
+
+.projects-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+#projects h2{
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+    font-size: 50px;
+
+    border-bottom: 1px solid rgb(0, 255, 221);
 }
 
 /*.home{
