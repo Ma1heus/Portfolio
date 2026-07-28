@@ -2,13 +2,10 @@
 
 ### Olá! Aqui é o Matheus 
 
-Neste exato momento estou trabalhando na criação de meu próprio portfólio. E como você pode ver, ele ainda não está pronto 🤓
-Minha intenção é terminá-lo o mais breve possível, assim todos poderão saber um pouco mais sobre mim e ver o que ando fazendo. 🚀🚀🚀
+Neste exato momento estou trabalhando na criação de meu próprio portfólio, porém como você pode notar, ele ainda não está pronto completo. Minha intenção era terminá-lo o mais breve possível, assim todos poderião saber um pouco mais sobre mim e sobre meus projetos pessoais.
 
-Esta é a versão 3.0, onde estou reformulando todo o código e tornando-o mais moderno e menos bagunçado. Além de estar transformando em si toda a página. Posso dizer que estou criando um projeto novo em cima do antigo. 
+Porém, ao adquirir mais conhecimentos de HTML, CSS e JavaScript, decidi que iniciaria o código de meu projeto do zero e o faria de uma maneira um tanto diferente. Porém preservarei este código da maneira como está para que eu possa ser visível o crescimento e desenvolvimento de minhas habilidades.
 
-Nesta versão existirá responsividade, botões mais dinâmicos, uso do JavaScript, cores mais modernas, layouts mais atraentes, mais sobre minha história e meus projetos. 📚
-
-Fique *a vontade* para me escrever e dizer o que tem achado do projeto até o momento 😎😎😎
+Fique *a vontade* para me escrever e dizer o que tem achado do projeto até o momento.
 
 <a href="https://ma1heus.github.io/Portfolio/">Acesse</a> ~ ```V 3.0```
